@@ -1,0 +1,120 @@
+{ // ~/.vscode/extensions
+    "editor.useTabStops": false,
+    "editor.tokenColorCustomizations": {
+
+        "comments": "#11A428",
+        "keywords": "#da28ce",
+        "strings": "#FF0000",
+        "variables": "#ff9900",
+        "types": "#0066ff",
+        "numbers": "#ff8800",
+        "textMateRules": [
+            {
+                "scope": "entity.name.function", // You can add other custom ones if you look at other options..
+                "settings": {
+                    "foreground": "#7543eb",
+                    // "background": "#43cfeb", Currently unsupported
+                },
+
+            }
+        ]
+    },
+    "workbench.colorCustomizations": {
+        // https://stackoverflow.com/questions/42307949/color-theme-for-vs-code-integrated-terminal
+        "terminal.foreground": "#000000",
+        "terminal.background": "#ffffff",
+        "editor.selectionBackground": "#c7ca25",
+        "editor.selectionHighlightBorder": "#000000",
+        "editor.selectionForeground": "#000000",
+        "editor.inactiveSelectionBackground": "#a6cc94",
+        "editor.selectionHighlightBackground": "#73ff00",
+        "editor.findMatchBackground": "#ea00ff",
+        "editor.findMatchHighlightBackground": "#00fff2",
+        "editor.foldBackground": "#c5c5c5",
+        "editorBracketMatch.border": "#ff0000",
+        "editorBracketMatch.background": "#ff0000",
+        "editorBracketMatch.foreground": "#000000",
+        "minimap.background": "#f0f0f0",
+        "minimap.selectionHighlight": "#00ff00",
+        "minimap.selectionOccurrenceHighlight": "#00ff00",
+        "minimap.findMatchHighlight": "#00ff00",
+        "scrollbarSlider.background": "#838383", // current page
+        "scrollbarSlider.activeBackground": "#ff9100", // mouse click
+        "scrollbarSlider.hoverBackground": "#464646", // mouse hover
+        "editorGutter.background": "#f1f1f1",
+    },
+    "files.trimTrailingWhitespace": true,
+    "editor.occurrencesHighlight": "singleFile",
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.menuBarVisibility": "visible",
+    "editor.scrollbar.horizontal": "visible",
+    "editor.scrollbar.horizontalScrollbarSize": 16,
+    "editor.scrollbar.vertical": "visible",
+    "editor.showFoldingControls": "always",
+    "debug.terminal.clearBeforeReusing": true,
+    "terminal.external.windowsExec": "",
+    "editor.autoClosingBrackets": "never",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.autoClosingOvertype": "never",
+    "typescript.autoClosingTags": false,
+    "javascript.autoClosingTags": false,
+    "editor.autoClosingDelete": "never",
+    "editor.autoClosingQuotes": "never",
+    "html.autoClosingTags": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "C_Cpp.inactiveRegionBackgroundColor": "#464646", // also "editor.foldBackground"
+    "C_Cpp.inactiveRegionForegroundColor": "#ffffff",
+    "C_Cpp.dimInactiveRegions": true,
+    "C_Cpp.vcFormat.space.removeBeforeSemicolon": false,
+    "C_Cpp.vcFormat.space.afterKeywordsInControlFlowStatements": false,
+    "C_Cpp.vcFormat.indent.namespaceContents": true,
+    "C_Cpp.vcFormat.space.withinInitializerListBraces": false,
+    "C_Cpp.autoAddFileAssociations": false,
+    "C_Cpp.codeAnalysis.clangTidy.codeAction.formatFixes": false,
+    "C_Cpp.codeAnalysis.clangTidy.codeAction.showDisable": false,
+    "C_Cpp.codeAnalysis.clangTidy.codeAction.showDocumentation": false,
+    "C_Cpp.codeAnalysis.runAutomatically": false,
+    "git.openRepositoryInParentFolders": "never",
+    "[python]": {
+        "editor.formatOnType": true,
+    },
+    "workbench.tree.renderIndentGuides": "always",
+    "diffEditor.maxFileSize": 1,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.quickSuggestionsDelay": 5,
+    "editor.minimap.size": "fit",
+    "editor.minimap.showSlider": "always",
+    "emmet.syntaxProfiles": {},
+    "C_Cpp.intelliSenseEngineFallback": "enabled",
+    "editor.tabCompletion": "on",
+    "editor.fontSize": 15,
+    "json.schemas": [],
+    "explorer.confirmDelete": false,
+    "editor.autoClosingComments": "never",
+    "debug.onTaskErrors": "showErrors",
+    "workbench.colorTheme": "GitHub Light",
+    "notebook.showFoldingControls": "always",
+    "editor.formatOnSave": false,
+
+    // Bracket guides (vertical lines across brackets):
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": true,
+    "editor.guides.highlightActiveBracketPair": true,
+    "editor.guides.highlightActiveIndentation": true,
+    "editor.guides.indentation": true,
+
+    // Bracket Highlighter extension:
+    "BracketHighlighter.backgroundColor": "#ff9100",
+    "BracketHighlighter.backgroundColorSymbol": "#00fff2",
+    "BracketHighlighter.border": "1px dotted red",
+    "BracketHighlighter.outline": "1px dotted blue",
+    //"BracketHighlighter.highlightScopeFromText": true, // erroneously highlights <<
+    "BracketHighlighter.useParentheses": true,
+    "BracketHighlighter.outlineSymbol": "3px dotted green",
+    "BracketHighlighter.textDecoration": "underline",
+    "BracketHighlighter.textDecorationSymbol": "underline",
+
+}

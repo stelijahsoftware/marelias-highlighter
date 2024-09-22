@@ -1,0 +1,215 @@
+// Install: ssss
+fdab https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html fda fd f dsaf d
+https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html fda fd f dsaf d
+https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html fda fd f dsaf d
+http s://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html fda fd f dsaf d
+https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html/ fda fds afds afds a
+http
+https fda fda //f fd afda f\nfda fd fdas // # fdasf
+Let `there be light` And there was light
+``` light of the world ```
+//fa
+//aa
+//ahere
+//a
+// ab
+fdafda //fda this
+https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html
+// this
+this // this
+this//this
+here is // this
+hereis //this // at end
+this // at end # this // one is
+//fdsafsa
+   // this
+// this # one is
+12345 fd432532 5432 5fw43 432fdab 5ofthem ofthem5 of5them 5432 54.354.4312 4.1 .1
+4
+5643
+
+This is a **bold** NOT BOLD NOW segment fdsa **abc** * ********* ******* **** *** fda fd afd a** fdsa f** dfsa **
+
+[x]This task is done...
+[x] This task is done...
+[X] also done
+x - This one also done
+X - THis is done
+abc[x] This task is done...
+aaa[X] also done
+bbbx - This one also done
+cccX - THis is done
+[X]
+[X]sa
+
+""" this is the comment Excellent!!! """
+''' another comment '''
+
+` fdsa `¬ ¬ ~ ~ ? ? / / ?? ´ ´
+# this is NOT BEING !!!!!!!!!!!!!!!!!!!!!!!!!!!!! ERRORERRORERRERRORE// RRORERRORERERRORERROR
+fdasfda´ ´ ` `
+# fda fd fdsa fds a fdsa fdsa fdsa dfas
+fdafda //fda this " this "
+"this is a string"
+https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html
+https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html/
+# download the .tar.gz file from
+a:=b aaa fda aaa aaaaaa fda fds afaaa
+## this is the blue comment!
+===== := = = =-=:==:::====this=
+https://github.com/opencv/opencv/releases
+# extract it, rename it to opencv. do the same for opencv_contrib note NOTE
+mkdir build # at the top folder, i.e. folder/opencv; folder/opencv_contrib; folder/build
+cd build
+conda deactivate # Make sure no conda environment is activated
+sudo apt-get install build-essential ccache libgtk-3-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev ffmpeg
+high this is it [h]
+[HIGH] aaa [H] [high]
+[MEDIUM] b 5432542 [M] [m] [med] [MED]
+[LOW] cccc [L] [l] [low]
+` fdas`
+# Sources:
+https://invent.kde.org/frameworks/syntax-highlighting/-/blob/master/data/syntax/python.xml
+https://docs.kde.org/stable5/en/kate/katepart/highlight.html
+
+# highlighter
+* A gedit colour scheme that allows adding colours to .txt files.
+* Advantage: edit same .txt files in vim (very simple colour codes).
+` this ` ``` fdafd a```
+Usage:
+====== `  fdasfd a`
+1. Line highlight:
+```
+/r red
+/g green
+/b blue
+/p purple
+/o orange
+/y yellow
+/d dark
+/w white
+// red
+#  green
+```
+
+2. Area highlight:
+```
+<r r>
+<g g>
+etc..
+```
+
+3. Symbol highlight:
+```
+* = $
+```
+
+Other:
+======
+
+* [gedit.desktop] is a .desktop file that allows opening files with separate windows.
+* This works on ubuntu. Will it work on Arch?
+* In addition to this file, you have to manually add to the file [~/.local/share/applications/mimeapps.list]:
+```
+[Default Applications]
+text/x-log=geditspecial.desktop
+text/plain=geditspecial.desktop
+
+[Added Associations]
+text/x-log=geditspecial.desktop;
+text/plain=geditspecial.desktop;
+```
+
+### DONE: (ADD THESE TO LIST OF FEATURES IN README
+
+1. use different symbols for colours: (DONE)
+
+< r r>
+
+< g g>
+` fda `
+etc..
+
+/r red
+
+/g green
+
+/b blue
+
+/p purple
+
+/o orange
+
+/y yellow
+
+/d dark
+
+/w white
+
+// Test:
+!!!hello hi
+/\\\-=*$1234567890?&%
+
+http://this-is-a-website (ends with a space or with line end)
+https://this-is-another-website (ends with a space)
+
+/r  Line comments
+//  this is also red
+#   this is green
+/g  this is also green
+/o  orange
+/lo light orange
+/b  blue
+/lb light blue
+/c  cyan
+/p  purple
+/ w this is a white line
+
+
+<r  Block comments r>
+<#  this is red #>
+<lo this is a test lo>
+<o  this is a test o>
+<b  this is a test b>
+<lb this is a test lb>
+<c  this is a test c>
+<g  this is a test g>
+<lg this is a test lg>
+<.  this is a test .>
+<p  this is a test p>
+< w this is a test w>
+<d  this is a test d>
+
+
+<- this should be crossed over ->
+<* this should be bold *>
+<_ this should be underlined _>
+<i this should be italics i>
+
+
+[r Titles (red) this is a title
+/hr same
+[o orange this is a title
+/ho same
+[b blue this is a title
+/hb same
+[g green this is a title
+/hg same
+[c cyan this is a title
+/hc same
+[p purple this is a title
+/hp same
+
+
+TODO:
+
+/* bold line
+/_ underlined line
+/i
+/-
+
+
+[high] This is a high task [HIGH]
+[medium] This is a medium task [MEDIUM]
+[low] this is a low task [LOW]
+

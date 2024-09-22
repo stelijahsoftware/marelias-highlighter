@@ -1,0 +1,33 @@
+[/]
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '3752cb92-0e62-43dc-8c2d-8d356b0029d8']
+
+[:3752cb92-0e62-43dc-8c2d-8d356b0029d8]
+background-color='rgb(48,10,36)'
+bold-color='rgb(235,255,0)'
+bold-color-same-as-fg=false
+bold-is-bright=true
+default-size-columns=100
+default-size-rows=28
+font='Monospace 13'
+foreground-color='rgb(239,240,241)'
+palette=['rgb(46,52,54)', 'rgb(237,21,21)', 'rgb(17,209,22)', 'rgb(246,116,0)', 'rgb(29,153,243)', 'rgb(155,89,182)', 'rgb(26,188,156)', 'rgb(255,170,255)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(253,188,75)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(0,170,255)']
+scrollback-unlimited=true
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=true
+visible-name='elyahw'
+
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(48,10,36)'
+bold-color='rgb(235,255,0)'
+bold-color-same-as-fg=false
+bold-is-bright=true
+default-size-columns=100
+default-size-rows=28
+font='Monospace 13'
+foreground-color='rgb(239,240,241)'
+palette=['rgb(46,52,54)', 'rgb(237,21,21)', 'rgb(17,209,22)', 'rgb(246,116,0)', 'rgb(29,153,243)', 'rgb(155,89,182)', 'rgb(26,188,156)', 'rgb(255,170,255)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(253,188,75)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(0,170,255)']
+scrollback-unlimited=true
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=true

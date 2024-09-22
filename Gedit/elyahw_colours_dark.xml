@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Dark theme by me!
+-->
+
+<style-scheme id="elyahw_colours_dark" _name="elyahw_colours_dark" version="1.0">
+
+  <author>althog</author>
+  <_description>custom colours by althog</_description>
+
+  <!-- Tango Palette (colour values)-->
+  <color name="white"                       value="#ffffff"/>
+  <color name="butter1"                     value="#fce94f"/>
+  <color name="butter2"                     value="#edd400"/>
+  <color name="butter3"                     value="#c4a000"/>
+  <color name="chameleon1"                  value="#8ae234"/>
+  <color name="chameleon2"                  value="#73d216"/>
+  <color name="chameleon3"                  value="#4e9a06"/>
+  <color name="orange1"                     value="#fcaf3e"/>
+  <color name="orange2"                     value="#f57900"/>
+  <color name="orange3"                     value="#ce5c00"/>
+  <color name="skyblue1"                    value="#729fcf"/>
+  <color name="skyblue2"                    value="#3465a4"/>
+  <color name="skyblue3"                    value="#204a87"/>
+  <color name="plum1"                       value="#ad7fa8"/>
+  <color name="plum2"                       value="#75507b"/>
+  <color name="plum3"                       value="#5c3566"/>
+  <color name="chocolate1"                  value="#e9b96e"/>
+  <color name="chocolate2"                  value="#c17d11"/>
+  <color name="chocolate3"                  value="#8f5902"/>
+  <color name="scarletred1"                 value="#ef2929"/>
+  <color name="scarletred2"                 value="#cc0000"/>
+  <color name="scarletred3"                 value="#a40000"/>
+  <color name="aluminium1"                  value="#eeeeec"/>
+  <color name="aluminium2"                  value="#d3d7cf"/>
+  <color name="aluminium3"                  value="#babdb6"/>
+  <color name="aluminium4"                  value="#888a85"/>
+  <color name="aluminium5"                  value="#555753"/>
+  <color name="aluminium6"                  value="#2e3436"/>
+
+<!-- shared section (shared between white & black themes)
+     **************
+     ************** -->
+  <color name="col_blue"                    value="#0000ff"/> <!-- to do: combine these with the ones above -->
+  <color name="col_blue_light"          value="#0080ff"/>
+  <color name="col_cyan"            value="#008a8c"/>
+  <color name="col_green"             value="#008f00"/>
+  <color name="col_green_light"         value="#00ff00"/>
+  <color name="col_orange"                  value="#ff8000"/>
+  <color name="col_orange_light"            value="#FFA500"/>
+  <color name="col_red"                     value="#ff0000"/>
+  <color name="col_yellow"                  value="#ffff00"/>
+  <color name="col_yellow_dark"             value="#ffc300"/>
+  <color name="col_purple"                  value="#ff00ff"/>
+  <color name="col_white"                   value="#ffffff"/>
+  <color name="col_black"                   value="#000000"/>
+
+  <!-- Colour names defines -->
+  <!-- options include: underline="true" bold="true" background="red" -->
+  <style name="def:blue"                    foreground="col_blue"/>
+  <style name="def:blue_light"              foreground="col_blue_light"/>
+  <style name="def:cyan"                    foreground="col_cyan"/>
+  <style name="def:green"                   foreground="col_green"/>
+  <style name="def:green_light"             foreground="col_green_light"/>
+  <style name="def:orange"                  foreground="col_orange"/>
+  <style name="def:orange_light"            foreground="col_orange_light"/>
+  <style name="def:red"                     foreground="col_red"/>
+  <style name="def:yellow"                  foreground="col_yellow"/>
+  <style name="def:yellow_dark"             foreground="col_yellow_dark"/>
+  <style name="def:purple"                foreground="col_purple"/>
+  <style name="def:white"                   foreground="col_white"/>
+  <style name="def:black"                foreground="col_black"/>
+
+  <style name="def:link"                    foreground="col_blue"       underline="true"/> 
+  <style name="def:link_light"              foreground="col_blue_light" underline="true"/>
+  <style name="def:bold"                bold="true"/>
+
+  <style name="def:background_green"        foreground="col_white"     background="col_green"/>
+  <!-- to do: add remaining background colours here -->
+<!-- **************
+     ************** -->
+
+  <!-- Background colour + text colour -->
+  <style name="text"                        foreground="white"         background="aluminium6"/>
+
+  <!-- Selection & searching -->
+  <style name="selection"                   foreground="#black"     background="#orange2" />
+  <style name="search-match"                foreground="aluminium1"     background="#blue"/>
+  <style name="line-numbers"                foreground="#red"         background="#black"/>
+  <style name="bracket-match"               foreground="#black"     background="col_yellow" bold="true"/>
+
+  <style name="cursor"                      foreground="aluminium2"/>
+  <style name="current-line"                background="aluminium5"/>
+  <style name="draw-spaces"                 foreground="aluminium4"/>
+  <style name="bracket-mismatch"            foreground="aluminium1"     background="scarletred2" bold="true"/>
+  <style name="right-margin"                foreground="aluminium1"     background="aluminium4"/>
+  <style name="def:comment"                 foreground="purple"/>
+  <style name="def:shebang"                 foreground="aluminium4"     bold="true"/>
+  <style name="def:doc-comment-element"     italic="true"/>
+
+  <style name="def:constant"                foreground="butter2"/>
+  <style name="def:string"                  foreground="butter2"/>
+  <style name="def:special-char"            foreground="orange3"/>
+  <style name="def:special-constant"        foreground="orange3"/>
+  <style name="def:floating-point"          foreground="orange3"/>
+  <style name="def:identifier"              foreground="skyblue1"/>
+  <style name="def:statement"               foreground="#white"     bold="true"/>
+  <style name="def:type"                    foreground="chameleon1"     bold="true"/>
+  <style name="def:preprocessor"            foreground="plum1"/>
+  <style name="def:error"                   foreground="aluminium1"     background="scarletred2"    bold="true"/>
+  <style name="def:note"                    background="butter1"     foreground="aluminium4"        bold="true"/>
+  <style name="def:underlined"              italic="true"         underline="true"/>
+
+  <!-- Language specific -->
+  <style name="diff:added-line"             foreground="butter2"/>
+  <style name="diff:removed-line"           foreground="skyblue1"/>
+  <style name="diff:changed-line"           foreground="plum1"/>
+  <style name="diff:diff-file"              foreground="chameleon1"     bold="true"/> 
+  <style name="diff:location"               foreground="chameleon1"/> 
+  <style name="diff:special-case"           foreground="#white"     bold="true"/>
+
+</style-scheme>
+

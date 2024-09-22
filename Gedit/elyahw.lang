@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<language id="elyahw" _name="elyahw" version="2.0" _section="Source">
+  <metadata>
+    <property name="globs">*.txt</property>
+  </metadata>
+
+  <styles>
+    <style id="red"            _name="red-l"        map-to="def:red"/>
+    <style id="code"            _name="code"        map-to="def:code"/>
+    <style id="green"        _name="green"        map-to="def:green"/>
+    <style id="green_light"        _name="green-l"        map-to="def:green_light"/>
+    <style id="blue"        _name="blue"        map-to="def:blue"/>
+    <style id="blue_light"        _name="blue-l"        map-to="def:blue_light"/>
+    <style id="orange"        _name="orange"        map-to="def:orange"/>
+    <style id="orange_light"    _name="orange-l"    map-to="def:orange_light"/>
+    <style id="purple"        _name="purple"        map-to="def:purple"/>
+    <style id="cyan"        _name="cyan"        map-to="def:cyan"/>
+    <style id="link_light"        _name="link-l"        map-to="def:link_light"/>
+    <style id="black"        _name="black"        map-to="def:black"/>
+    <style id="white"        _name="white"        map-to="def:white"/>
+
+    <style id="todos"        _name="todos"            map-to="def:todos"/>
+    <style id="importanceH"        _name="importanceH"            map-to="def:importanceH"/>
+    <style id="importanceM"        _name="importanceM"            map-to="def:importanceM"/>
+    <style id="importanceL"        _name="importanceL"            map-to="def:importanceL"/>
+
+    <style id="background_red"    _name="background_red"        map-to="def:background_red"/>
+    <style id="background_orange"    _name="background_orange"    map-to="def:background_orange"/>
+    <style id="background_blue"    _name="background_blue"        map-to="def:background_blue"/>
+    <style id="background_green"    _name="background_green"    map-to="def:background_green"/>
+    <style id="background_cyan"    _name="background_cyan"        map-to="def:background_cyan"/>
+    <style id="background_purple"    _name="background_purple"    map-to="def:background_purple"/>
+
+    <style id="italic"        _name="italic"            map-to="def:italic"/>
+    <style id="bold"        _name="bold"            map-to="def:bold"/>
+    <style id="underline"        _name="underline"        map-to="def:underline"/>
+    <style id="strikethrough"    _name="strikethrough"        map-to="def:strikethrough"/>
+
+  </styles>
+
+  <default-regex-options case-sensitive="false"/>
+
+  <definitions>
+
+<!-- symbols/numbers/phrases -->
+    <context id="symbols"    style-ref="purple">
+      <match extended="true">
+        (\=) | 
+        (\*) |
+        (\-)
+      </match>
+    </context> <!-- *** --> <!-- === -->
+
+    <context id="numbers"    style-ref="orange">
+      <match extended="true">
+        ([0-9]*)
+      </match>
+    </context> <!-- 1234567890 -->
+
+    <!-- todos -->
+    <context id="todos"    style-ref="todos">
+      <match extended="true">
+        (TODO)  |
+        (todo)
+      </match>
+    </context>
+
+    <context id="importanceH"    style-ref="importanceH">
+      <match extended="true">
+        (\[HIGH\]) | (\[high\])
+      </match>
+    </context>
+
+    <context id="importanceM"    style-ref="importanceM">
+      <match extended="true">
+        (\[MEDIUM\]) | (\[medium\])
+      </match>
+    </context>
+
+    <context id="importanceL"    style-ref="importanceL">
+      <match extended="true">
+        (\[LOW\]) | (\[low\])
+      </match>
+    </context>
+
+    <context id="todos_done_star"    style-ref="strikethrough"    end-at-line-end="true">
+        <start>X\ \*</start>
+    </context> <!-- X * this task is done -->
+
+    <context id="todos_done_dash"    style-ref="strikethrough"    end-at-line-end="true">
+        <start>X\ \-</start>
+    </context> <!-- X - this task is done -->
+
+<!-- Background titles -->
+    <context id="background_red"    style-ref="background_red"    end-at-line-end="true">
+        <start>\[r\ </start>
+    </context> <!-- [r red -->
+    <context id="background_red2"    style-ref="background_red"    end-at-line-end="true">
+        <start>/hr\ </start>
+    </context><!-- /hr red -->
+
+    <context id="background_orange"    style-ref="background_orange"    end-at-line-end="true">
+        <start>\[o\ </start>
+    </context>
+    <context id="background_orange2"    style-ref="background_orange"    end-at-line-end="true">
+        <start>/ho\ </start>
+    </context>
+
+    <context id="background_blue"    style-ref="background_blue"    end-at-line-end="true">
+        <start>\[b\ </start>
+    </context>
+    <context id="background_blue2"    style-ref="background_blue"    end-at-line-end="true">
+        <start>/hb\ </start>
+    </context>
+
+    <context id="background_green"    style-ref="background_green"    end-at-line-end="true">
+        <start>\[g\ </start>
+    </context>
+    <context id="background_green2"    style-ref="background_green"    end-at-line-end="true">
+        <start>/hg\ </start>
+    </context>
+
+    <context id="background_cyan"    style-ref="background_cyan"    end-at-line-end="true">
+        <start>\[c\ </start>
+    </context>
+    <context id="background_cyan2"    style-ref="background_cyan"    end-at-line-end="true">
+        <start>/hc\ </start>
+    </context>
+
+    <context id="background_purple"    style-ref="background_purple"    end-at-line-end="true">
+        <start>\[p\ </start>
+    </context>
+    <context id="background_purple2"    style-ref="background_purple"    end-at-line-end="true">
+        <start>/hp\ </start>
+    </context>
+
+<!-- links -->
+    <context id="link_http"        style-ref="link_light"    end-at-line-end="true">
+        <start>http\:</start>    
+        <end>\ </end>
+        <!-- http://this-is-a website -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="link_https"        style-ref="link_light"    end-at-line-end="true">
+        <start>https\:</start>    
+        <end>\ </end>
+        <!-- https://this-is-a website -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="link_ftp"        style-ref="link_light"    end-at-line-end="true">
+        <start>ftp\:</start>    
+        <end>\ </end>
+        <!-- ftp://this-is-a website -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="link_ftps"        style-ref="link_light"    end-at-line-end="true">
+        <start>ftps\:</start>    
+        <end>\ </end>
+        <!-- ftps://this-is-a website -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+<!-- single line comments '/r ' -->
+    <context id="comment_line_green"        style-ref="green"        end-at-line-end="true">
+        <start>/g\ </start>
+    </context> <!-- /g green -->
+
+    <context id="comment_line_red"            style-ref="red"            end-at-line-end="true">
+        <start>/r\ </start>
+    </context> <!-- /r red -->
+
+    <context id="comment_line_blue"            style-ref="blue"        end-at-line-end="true">
+        <start>/b\ </start>
+    </context>  <!-- /b blue -->
+
+    <context id="comment_line_cyan"            style-ref="cyan"        end-at-line-end="true">
+        <start>/c\ </start>
+    </context>
+
+    <context id="comment_line_orange"        style-ref="orange"        end-at-line-end="true">
+        <start>/o\ </start>
+    </context>
+
+    <context id="comment_line_purple"        style-ref="purple"        end-at-line-end="true">
+        <start>/p\ </start>
+    </context>
+
+    <context id="comment_line_white"        style-ref="white"        end-at-line-end="true">
+        <start>/w\ </start>
+    </context>
+
+    <context id="comment_line_black"        style-ref="black"        end-at-line-end="true">
+        <start>/d\ </start>
+    </context>
+
+    <context id="comment_line_orange_l"        style-ref="orange_light"    end-at-line-end="true">
+        <start>/lo\ </start>
+    </context>
+
+    <context id="comment_line_green_l"        style-ref="green_light"        end-at-line-end="true">
+        <start>/lg\ </start>
+    </context>
+
+    <context id="comment_line_blue_l"        style-ref="blue_light"        end-at-line-end="true">
+        <start>/lb\ </start>
+    </context>
+
+    <context id="comment_line_hash"            style-ref="green"         end-at-line-end="true">
+        <start>&#35;\ </start>
+    </context> <!-- # green -->
+
+    <context id="comment_line_dslash"         style-ref="red"            end-at-line-end="true">
+        <start>&#47;&#47;\ </start>
+    </context> <!-- // red -->
+
+<!-- multi-line comments -->
+    <context id="highlight_region_hash"        style-ref="red">
+        <start>&lt;&#35;\ </start> 
+        <end>&#35;&gt;</end>
+        <!-- <# test #> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="highlight_region_aaa"        style-ref="code">
+        <start>&#96;\ </start> 
+        <end>&#96;</end>
+        <!-- ` test ` -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="highlight_region_dot"        style-ref="green_light">
+        <start>&lt;\.\ </start>
+        <end>\.&gt;</end>
+        <!-- <. test .> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="highlight_region_red"        style-ref="red">
+        <start>&lt;r\ </start> 
+        <end>r&gt;</end>
+        <!-- <r test r> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="highlight_region_orange"        style-ref="orange">
+        <start>&lt;o\ </start> 
+        <end>o&gt;</end>
+        <!-- <o test o> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="highlight_region_blue"        style-ref="blue">
+        <start>&lt;b\ </start> 
+        <end>b&gt;</end>
+        <!-- <b test b> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="highlight_region_green"        style-ref="green">
+        <start>&lt;g\ </start> 
+        <end>g&gt;</end>
+        <!-- <g test g> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="highlight_region_purple"        style-ref="purple">
+        <start>&lt;p\ </start> 
+        <end>p&gt;</end>
+        <!-- <p test p> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="highlight_region_white"        style-ref="white">
+        <start>&lt;w\ </start> 
+        <end>w&gt;</end>
+        <!-- <w test w> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="highlight_region_black"        style-ref="black">
+        <start>&lt;d\ </start> 
+        <end>d&gt;</end>
+        <!-- <d test d> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+
+
+    <context id="highlight_region_cyan"        style-ref="cyan">
+        <start>&lt;c\ </start> 
+        <end>c&gt;</end>
+        <!-- <c test c> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="highlight_region_blue_l"        style-ref="blue_light">
+        <start>&lt;lb\ </start> 
+        <end>lb&gt;</end>
+        <!-- <lb test lb> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="highlight_region_green_l"        style-ref="green_light">
+        <start>&lt;lg\ </start> 
+        <end>lg&gt;</end>
+        <!-- <lg test lg> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="highlight_region_orange_l"        style-ref="orange_light">
+        <start>&lt;lo\ </start> 
+        <end>lo&gt;</end>
+        <!-- <lo test lo> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+<!-- Font styles -->
+    <context id="font_bold"            style-ref="bold">
+        <start>&lt;\*\ </start>
+        <end>\*&gt;</end>
+        <!-- <* test *> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="font_italic"        style-ref="italic">
+        <start>&lt;i\ </start>
+        <end>i&gt;</end>
+        <!-- <i test i> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="font_underline"        style-ref="underline">
+        <start>&lt;_\ </start>
+        <end>_&gt;</end>
+        <!-- <_ test _> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="font_strikethrough"    style-ref="strikethrough">
+        <start>&lt;-\ </start>
+        <end>-&gt;</end>
+        <!-- <- test -> -->
+        <include>
+            <context ref="def:in-comment"/>
+        </include>
+    </context>
+
+    <context id="elyahw">
+      <include>
+        <context ref="symbols"/>
+        <context ref="numbers"/>
+        <context ref="todos"/>
+        <context ref="importanceH"/>
+        <context ref="importanceM"/>
+        <context ref="importanceL"/>
+        <context ref="todos_done_star"/>
+        <context ref="todos_done_dash"/>
+        <context ref="link_http"/>
+        <context ref="link_https"/>
+        <context ref="link_ftp"/>
+        <context ref="link_ftp"/>
+        <context ref="comment_line_green"/>
+        <context ref="comment_line_green_l"/>
+         <context ref="comment_line_red"/>
+         <context ref="comment_line_blue"/>
+         <context ref="comment_line_blue_l"/>
+         <context ref="comment_line_cyan"/>
+         <context ref="comment_line_orange"/>
+         <context ref="comment_line_orange_l"/>
+         <context ref="comment_line_purple"/>
+        <context ref="comment_line_white"/>
+        <context ref="comment_line_black"/>
+        <context ref="comment_line_hash"/>
+        <context ref="comment_line_dslash"/>
+        <context ref="highlight_region_hash"/>
+        <context ref="highlight_region_aaa"/>
+        <context ref="highlight_region_dot"/>
+        <context ref="highlight_region_red"/>
+        <context ref="highlight_region_orange"/>
+        <context ref="highlight_region_orange_l"/>
+        <context ref="highlight_region_blue"/>
+        <context ref="highlight_region_blue_l"/>
+        <context ref="highlight_region_green"/>
+        <context ref="highlight_region_green_l"/>
+        <context ref="highlight_region_purple"/>
+        <context ref="highlight_region_cyan"/>
+        <context ref="highlight_region_black"/>
+        <context ref="highlight_region_white"/>
+        <context ref="background_red"/>
+        <context ref="background_red2"/>
+        <context ref="background_orange"/>
+        <context ref="background_orange2"/>
+        <context ref="background_blue"/>
+        <context ref="background_blue2"/>
+        <context ref="background_green"/>
+        <context ref="background_green2"/>
+        <context ref="background_cyan"/>
+        <context ref="background_cyan2"/>
+        <context ref="background_purple"/>
+        <context ref="background_purple2"/>
+        <context ref="font_bold"/>
+        <context ref="font_italic"/>
+        <context ref="font_underline"/>
+        <context ref="font_strikethrough"/>
+      </include>
+    </context>
+
+  </definitions>
+</language>
+

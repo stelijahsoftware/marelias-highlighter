@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<style-scheme id="elyahw_colours" _name="elyahw_colours" version="1.0">
+
+  <author>By elyahw</author>
+  <_description>Custom colours elyahw</_description>
+
+<!-- for comments, search 'def:comment' -->
+
+<!-- Palette (colours) -->
+  <color name="blue"       value="#0000FF"/>
+  <color name="magenta"    value="#FF00FF"/>
+  <color name="violet"     value="#6A5ACD"/>
+  <color name="cyan"       value="#008A8C"/>
+  <color name="green"      value="#2E8B57"/>
+  <color name="bordeaux"   value="#A52A2A"/>
+  <color name="red"        value="#FF0000"/>
+  <color name="yellow"     value="#FFFF00"/>
+  <color name="purple"     value="#A020F0"/>
+  <!-- shared section (shared between white & black themes). todo: combine these with the ones above -->
+  <color name="col_blue"                    value="#0000ff"/>
+  <color name="col_blue_light"              value="#0080ff"/>
+  <color name="col_blue_light1"             value="#e6f3ff"/> <!-- 99ccff -->
+  <color name="col_cyan"                    value="#008a8c"/>
+  <color name="col_green"                   value="#008f00"/>
+  <color name="col_green_light"             value="#00ff00"/>
+  <color name="col_orange"                  value="#ff8000"/>
+  <color name="col_orange_light"            value="#FFA500"/>
+  <color name="col_red"                     value="#ff0000"/>
+  <color name="col_yellow"                  value="#ffff00"/>
+  <color name="col_yellow_dark"             value="#ffc300"/>
+  <color name="col_purple"                  value="#ff00ff"/>
+  <color name="col_white"                   value="#ffffff"/>
+  <color name="col_dark_white"              value="#E0E0E0"/>
+  <color name="col_black"                   value="#000000"/>
+  <color name="col_gray"                    value="#D8D8D8"/>
+  <color name="col_dgray"                   value="#B5B5B5"/>
+    
+<!-- Backgrounds/todo/underlines,bolds,italics,strikethroughs -->
+  <style name="def:todos"                   foreground="col_red"   background="col_black"     bold="true"/>
+  <style name="def:importanceH"             foreground="col_black"   background="col_red"     bold="true"/>
+  <style name="def:importanceM"             foreground="col_black"   background="col_orange"     bold="true"/>
+  <style name="def:importanceL"             foreground="col_black"   background="col_yellow"     bold="true"/>
+
+  <style name="def:background_red"          foreground="col_black" background="col_red"       bold="true"/>
+  <style name="def:background_orange"       foreground="col_black" background="col_orange"    bold="true"/>
+  <style name="def:background_blue"         foreground="col_white" background="col_blue"      bold="true"/>
+  <style name="def:background_green"        foreground="col_white" background="col_green"     bold="true"/>
+  <style name="def:background_cyan"         foreground="col_white" background="col_cyan"      bold="true"/>
+  <style name="def:background_purple"       foreground="col_white" background="col_purple"    bold="true"/>
+  <style name="def:italic"                                                                    italic="true"/>
+  <style name="def:bold"                                                                      bold="true"/>
+  <style name="def:underline"                                                                 underline="true"/>
+  <style name="def:strikethrough"                                  background="col_dark_white" strikethrough="true" bold="true" />
+
+  <!-- Colour names defines -->
+  <style name="def:blue"                    foreground="col_blue"/>
+  <style name="def:blue_light"              foreground="col_blue_light"/>
+  <style name="def:cyan"                    foreground="col_cyan"/>
+  <style name="def:green"                   foreground="col_green"/>
+  <style name="def:green_light"             foreground="col_green_light"/>
+  <style name="def:orange"                  foreground="col_orange"/>
+  <style name="def:orange_light"            foreground="col_orange_light"/>
+  <style name="def:red"                     foreground="col_red"/>
+  <!-- Do not work: font-family="courier" font="courier" font-size="4" -->
+  <style name="def:code"                    foreground="col_black" background="col_dgray"/>
+  <style name="def:yellow"                  foreground="col_yellow"/>
+  <style name="def:yellow_dark"             foreground="col_yellow_dark"/>
+  <style name="def:purple"                  foreground="col_purple"/>
+  <style name="def:white"                   foreground="col_white"/>
+  <style name="def:black"                   foreground="col_black"/>
+
+  <style name="def:link"                    foreground="col_blue"       underline="true"/> 
+  <style name="def:link_light"              foreground="col_blue_light" underline="true"/>
+
+  <!-- Background colour + text colour - line numbers here-->
+  <style name="text"                        foreground="#black" background="#white"/>
+  <style name="selection"                   foreground="#black" background="#orange2"/>
+  <style name="line-numbers"                foreground="#black" background="#col_gray"/>
+
+  <style name="current-line"                background="#eeeeec"/>
+  <style name="current-line-number"         background="col_dgray"/>
+  <style name="draw-spaces"                 foreground="#babdb6"/>
+  <style name="background-pattern"          background="#f3f3f3"/>
+
+  <!-- from classic -->
+  <style name="bracket-match"               foreground="#white" background="#red"  bold="true"/>
+  <style name="bracket-mismatch"            foreground="#white" background="#red"  bold="true"/>
+  <style name="search-match"                background="yellow"/>
+  <style name="def:comment"                 foreground="blue"   background="col_blue_light1"/>
+  <style name="def:shebang"                 foreground="blue"                      bold="true"/>
+  <style name="def:doc-comment-element"     italic="true"/>
+  <style name="def:constant"                foreground="magenta"/>
+  <style name="def:special-char"            foreground="violet"/>
+  <style name="def:identifier"              foreground="cyan"/>
+  <style name="def:statement"               foreground="bordeaux"                  bold="true"/>
+  <style name="def:type"                    foreground="green"                     bold="true"/>
+
+  <style name="def:preprocessor"            foreground="purple"/>
+  <style name="def:error"                                      background="red"    bold="true"/>
+  <style name="def:note"                    foreground="blue"  background="yellow" bold="true"/>
+  <style name="def:underlined"              italic="true"                          underline="true"/>
+  <style name="diff:added-line"             foreground="#008B8B"/>
+  <style name="diff:removed-line"           foreground="#6A5ACD"/>
+  <style name="diff:changed-line"           use-style="def:preprocessor"/>
+  <style name="diff:special-case"           use-style="def:constant"/>
+  <style name="diff:location"               use-style="def:statement"/>
+  <style name="diff:diff-file"              use-style="def:type"/>
+  <style name="xml:tags"                    foreground="cyan"/>
+  <style name="xml:attribute-name"          foreground="violet"/>
+  <style name="xml:namespace"               foreground="green"         bold="true"/>
+  <style name="latex:display-math"          foreground="#6A5ACD"/>
+  <style name="latex:command"               foreground="#2E8B57"       bold="true"/>
+  <style name="latex:include"               use-style="def:preprocessor"/>
+  <style name="sh:variable"                 foreground="#6A5ACD"/>
+</style-scheme>
+
