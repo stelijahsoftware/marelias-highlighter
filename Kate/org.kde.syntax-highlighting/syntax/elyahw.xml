@@ -114,7 +114,7 @@ b5b5b5 dark grey
             <itemData name="ColourNumb" color='#ff8000'/>
             <itemData name="ColourHigh" color='#000000' backgroundColor='#ff0000' bold="1"/>
             <itemData name="ColourMedium" color='#000000' backgroundColor='#ff8000' bold="1"/>
-            <itemData name="ColourLow" color='#000000' backgroundColor='#ffff00' bold="1"/>
+            <itemData name="ColourLow" color='#000000' backgroundColor='#00d400' bold="1"/>
             <itemData name="TaskDone" strikeOut="1" bold="1" backgroundColor="#eeeeee" /> <!-- Note: strikeOut not strikeout -->
             <itemData name="CodeSegment" color='#000000' backgroundColor='#eaeaea' italic="1"/>
         </itemDatas>

@@ -113,7 +113,7 @@
     },
     "editor-colors": {
         "BackgroundColor": "#ffffff",
-        "BracketMatching": "#ffff00",
+        "BracketMatching": "#2ecc71",
         "CodeFolding": "#94caef",
         "CurrentLine": "#f8f7f6",
         "CurrentLineNumber": "#1e1e1e",
@@ -123,7 +123,7 @@
         "MarkBookmark": "#0000ff",
         "MarkBreakpointActive": "#ff0000",
         "MarkBreakpointDisabled": "#ff00ff",
-        "MarkBreakpointReached": "#ffff00",
+        "MarkBreakpointReached": "#bf0303",
         "MarkError": "#ff0000",
         "MarkExecution": "#a0a0a4",
         "MarkWarning": "#00ff00",
