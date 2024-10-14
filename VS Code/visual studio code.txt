@@ -33,6 +33,7 @@
         "editor.foldBackground": "#c5c5c5",
         "editorBracketMatch.border": "#ff0000",
         "editorBracketMatch.background": "#ff0000",
+        "editor.wordHighlightBackground": "#ff0000c2", // https://stackoverflow.com/questions/35926381/change-highlight-text-color-in-visual-studio-code
         "editorBracketMatch.foreground": "#000000",
         "minimap.background": "#f0f0f0",
         "minimap.selectionHighlight": "#00ff00",
