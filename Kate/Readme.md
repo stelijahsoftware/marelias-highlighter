@@ -24,8 +24,17 @@ make && sleep 0.5 && kate TEST_FILE.txt
 * A gedit colour scheme that allows adding colours to .txt files.
 * Advantage: edit same .txt files in vim (very simple colour codes).
 
-Usage:
-======
+# TO DO: (All of these are moved to Highlighter2 TODO section in README.md)
+  * detect a path [/path/path/...] (see c.lang file) (see how '#include < aaa >' is done)
+  * use ` code goes here ` to make a code block with different font?
+  * use \_word\_ to make italic
+  * use \_\_word\_\_ to make bold (as here: https://github.com/atom/markdown-preview)
+[X] + '< + [letter] + [space]' (HAS TO HAVE A SPACE IN IT)
+[X] SAME THING IN THE CASE OF '/' + 'r'
+* Make the line comments active only at the beginning of lines
+This is a new line /r ....... invalid
+
+# Usage:
 1. Line highlight:
 ```
 /r red
@@ -52,9 +61,7 @@ etc..
 * = $
 ```
 
-Other:
-======
-
+# Other:
 * [gedit.desktop] is a .desktop file that allows opening files with separate windows.
 * This works on ubuntu. Will it work on Arch?
 * In addition to this file, you have to manually add to the file [~/.local/share/applications/mimeapps.list]:
@@ -166,15 +173,8 @@ TODO:
 [l]
 
 ---
+===
 
-### TO DO: (All of these are moved to Highlighter2 TODO section in README.md)
-  * detect a path [/path/path/...] (see c.lang file) (see how '#include < aaa >' is done)
-  * use ` code goes here ` to make a code block with different font?
-  * use \_word\_ to make italic
-  * use \_\_word\_\_ to make bold (as here: https://github.com/atom/markdown-preview)
-[X] + '< + [letter] + [space]' (HAS TO HAVE A SPACE IN IT)
-[X] SAME THING IN THE CASE OF '/' + 'r'
-* Make the line comments active only at the beginning of lines
-This is a new line /r ....... invalid
-
-  
+## Sample title
+# Sample title
+// Sample title
