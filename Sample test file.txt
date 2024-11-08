@@ -1,11 +1,6 @@
-# highlighter
-* A gedit colour scheme that allows adding colours to .txt files.
-* Advantage: edit same .txt files in vim (very simple colour codes).
-
 Usage:
 ======
 1. Line highlight:
-```
 /r red
 /g green
 /b blue
@@ -16,39 +11,29 @@ Usage:
 /w white
 // red
 #  green
-```
 
 2. Area highlight:
-```
 <r r>
 <g g>
 etc..
-```
 
 3. Symbol highlight:
-```
 * = $
+
+4. Code:
+```
+import pythonlib
 ```
 
-Other:
-======
 
-* [gedit.desktop] is a .desktop file that allows opening files with separate windows.
-* This works on ubuntu. Will it work on Arch?
-* In addition to this file, you have to manually add to the file [~/.local/share/applications/mimeapps.list]:
-```
-[Default Applications]
-text/x-log=geditspecial.desktop
-text/plain=geditspecial.desktop
+## Sample title
+# Sample title
+// Sample title
+---
+===
 
-[Added Associations]
-text/x-log=geditspecial.desktop;
-text/plain=geditspecial.desktop;
-```
 
-### DONE: (ADD THESE TO LIST OF FEATURES IN README
-
-1. use different symbols for colours: (DONE)
+5. use different symbols for colours: (DONE)
 
 < r r>
 
@@ -92,7 +77,7 @@ https://this-is-another-website (ends with a space)
 / w this is a white line
 
 
-<r  Block comments r> 
+<r  Block comments r>
 <#  this is red #>
 <lo this is a test lo>
 <o  this is a test o>
@@ -126,29 +111,12 @@ https://this-is-another-website (ends with a space)
 [p purple this is a title
 /hp same
 
-
-TODO:
-
-/* bold line
-/_ underlined line
-/i
-/-
-
-
+### Tasks:
 [high] This is a high task [HIGH]
 [medium] This is a medium task [MEDIUM]
 [low] this is a low task [LOW]
 
----
+[h]
+[m]
+[l]
 
-### TO DO: (All of these are moved to Highlighter2 TODO section in README.md)
-  * detect a path [/path/path/...] (see c.lang file) (see how '#include < aaa >' is done)
-  * use ` code goes here ` to make a code block with different font?
-  * use \_word\_ to make italic
-  * use \_\_word\_\_ to make bold (as here: https://github.com/atom/markdown-preview)
-[X] + '< + [letter] + [space]' (HAS TO HAVE A SPACE IN IT)
-[X] SAME THING IN THE CASE OF '/' + 'r'
-* Make the line comments active only at the beginning of lines
-This is a new line /r ....... invalid
-
-  
