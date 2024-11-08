@@ -16,12 +16,18 @@
                 <Detect2Chars attribute="CommentBloodRed" char="/" char1="/" context="double-cpp-comment"/>
 
                 <RegExpr attribute="TaskDone" context="TaskDoneContext" String="^\[x\]\ |^\[X\]\ |^x\ -|^X\ -"/>
+                <RegExpr attribute="BlockTitleRed" context="BlockTitleRedContext" String="^\[r\ "/>
+                <RegExpr attribute="BlockTitleBlue" context="BlockTitleBlueContext" String="^\[b\ "/>
+                <RegExpr attribute="BlockTitleOrange" context="BlockTitleOrangeContext" String="^\[o\ "/>
+                <RegExpr attribute="BlockTitleCyan" context="BlockTitleCyanContext" String="^\[c\ "/>
+                <RegExpr attribute="BlockTitleGreen" context="BlockTitleGreenContext" String="^\[g\ "/>
+                <RegExpr attribute="BlockTitlePurple" context="BlockTitlePurpleContext" String="^\[p\ "/>
 
                 <!-- 3. Multiple line comments: -->
                 <RegExpr attribute="CodeSegment"     String="&#96;"              insensitive="true" context="#pop!codeBlock"       beginRegion="codeSegmentBegin"/> <!-- `code` -->
                 <RegExpr attribute="CommentPyQuotes" String="&quot;&quot;&quot;" insensitive="true" context="#pop!Triple Q-string" beginRegion="Triple Q-region"/>
                 <RegExpr attribute="CommentPyQuotes" String="&apos;&apos;&apos;" insensitive="true" context="#pop!Triple Q-string" beginRegion="Triple Q-region"/>
-                
+
                 <!-- bold text copied from markdown.xml -->
                 <RegExpr attribute="Strong Text" context="#pop" minimal="true" String="\*{2}(?:(?:(?:[^\*\s\\]|\\.)(?:[^\\]|\\.)*)?(?:[^\*\s\\]|\\\S)\*{2}|\*{1,3}(?:(?:[^\*\s\\]|\\.)(?:[^\\]|\\.)*)?(?:[^\*\s\\]|\\\S)\*{2}(?!\*))"/>
                 <RegExpr attribute="Strong Text" context="#pop" minimal="true" String="\b_{2}(?:(?:(?:[^_\s\\]|\\.)(?:[^\\]|\\.)*)?(?:[^_\s\\]|\\\S)_{2}|_{1,3}(?:(?:[^_\s\\]|\\.)(?:[^\\]|\\.)*)?(?:[^_\s\\]|\\\S)_{2}(?!_))"/>
@@ -68,7 +74,37 @@
                 <DetectSpaces />
                 <DetectIdentifier/>
             </context>
-            
+
+            <context name="BlockTitleRedContext" attribute="BlockTitleRed" lineEndContext="#pop">
+                <DetectSpaces />
+                <DetectIdentifier/>
+            </context>
+
+            <context name="BlockTitleBlueContext" attribute="BlockTitleBlue" lineEndContext="#pop">
+                <DetectSpaces />
+                <DetectIdentifier/>
+            </context>
+
+            <context name="BlockTitleGreenContext" attribute="BlockTitleGreen" lineEndContext="#pop">
+                <DetectSpaces />
+                <DetectIdentifier/>
+            </context>
+
+            <context name="BlockTitleOrangeContext" attribute="BlockTitleOrange" lineEndContext="#pop">
+                <DetectSpaces />
+                <DetectIdentifier/>
+            </context>
+
+            <context name="BlockTitleCyanContext" attribute="BlockTitleCyan" lineEndContext="#pop">
+                <DetectSpaces />
+                <DetectIdentifier/>
+            </context>
+
+            <context name="BlockTitlePurpleContext" attribute="BlockTitlePurple" lineEndContext="#pop">
+                <DetectSpaces />
+                <DetectIdentifier/>
+            </context>
+
             <context name="blue-comment" attribute="CommentBlue" lineEndContext="#pop">
                 <DetectSpaces />
                 <DetectIdentifier/>
@@ -82,16 +118,17 @@
             <itemData name="CommentPyQuotes" defStyleNum="dsString"/>
 
  <!-- Colours:
-0080ff light blue (urls)
-008a8c cyan
-1603ff blue, bg e6f3ff
-de0303 blood red
-ff0000 red
-ff00ff light purple
-ff8000 orange
-008f00 green
-ffff00 yellow
-b5b5b5 dark grey
+#0080ff light blue (urls)
+#008a8c
+#00ffff cyan
+#1603ff blue, bg e6f3ff
+#de0303 blood red
+#ff0000 red
+#ff00ff light purple
+#ff8000 orange
+#008f00 green
+#ffff00 yellow
+#b5b5b5 dark grey
  -->
  
 <!--
@@ -116,6 +153,12 @@ b5b5b5 dark grey
             <itemData name="ColourMedium" color='#000000' backgroundColor='#ff8000' bold="1"/>
             <itemData name="ColourLow" color='#000000' backgroundColor='#00d400' bold="1"/>
             <itemData name="TaskDone" strikeOut="1" bold="1" backgroundColor="#eeeeee" /> <!-- Note: strikeOut not strikeout -->
+            <itemData name="BlockTitleRed" bold="1" color='#ffffff' backgroundColor="#ff0000" />
+            <itemData name="BlockTitleBlue" bold="1" color='#ffffff' backgroundColor="#1603ff" />
+            <itemData name="BlockTitleGreen" bold="1" color='#ffffff' backgroundColor="#008f00" />
+            <itemData name="BlockTitleOrange" bold="1" color='#ffffff' backgroundColor="#ff8000" />
+            <itemData name="BlockTitleCyan" bold="1" color='#ffffff' backgroundColor="#00ffff" />
+            <itemData name="BlockTitlePurple" bold="1" color='#ffffff' backgroundColor="#800080" />
             <itemData name="CodeSegment" color='#000000' backgroundColor='#eaeaea' italic="1"/>
         </itemDatas>
     </highlighting>
