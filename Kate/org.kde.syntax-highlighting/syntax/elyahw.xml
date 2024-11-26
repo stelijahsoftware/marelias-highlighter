@@ -143,9 +143,9 @@
     spellChecking if true, the text will be spellchecked.
 -->
             <itemData name="Strong Text" color='#000000' bold="true"/>
-            <itemData name="Comment" color='#008f00'/>
+            <itemData name="Comment" color='#008f00' backgroundColor='#edfff6'/>
             <itemData name="CommentBlue" color='#1603ff' backgroundColor='#e6f3ff'/>
-            <itemData name="CommentBloodRed" color='#de0303'/>
+            <itemData name="CommentBloodRed" color='#de0303' backgroundColor='#fff2f2'/>
             <itemData name="HTTP Header" color='#0080ff' underline="1" bold="0" italic="0" />
             <itemData name="ColourChar" color='#ff00ff'/>
             <itemData name="ColourNumb" color='#ff8000'/>
