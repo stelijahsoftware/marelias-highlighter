@@ -1,7 +1,6 @@
 { // ~/.vscode/extensions
     "editor.useTabStops": false,
     "editor.tokenColorCustomizations": {
-
         "comments": "#11A428",
         "keywords": "#da28ce",
         "strings": "#FF0000",
