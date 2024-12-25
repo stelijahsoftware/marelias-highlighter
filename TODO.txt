@@ -1,4 +1,5 @@
-- colour $ as pink
+[h] - colour $ as pink
+[h] - Colour line beginning with $ as code
 * detect a path [/path/path/...] (see c.lang file) (see how '#include < aaa >' is done)
 * use ` code goes here ` to make a code block with different font?
 * use \_word\_ to make italic
