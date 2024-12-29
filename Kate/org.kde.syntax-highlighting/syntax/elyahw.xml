@@ -10,8 +10,10 @@
                 <DetectSpaces attribute="Normal Text"/>
 
                 <!-- 1. One line comments, until end of line: -->
-                <Detect2Chars attribute="CommentBlue" char="#" char1="#" context="blue-comment"/> <!-- Order matters: Attempt to match ## before # -->
-                <DetectChar attribute="Comment" char="#" context="Hash comment"/>
+
+                <RegExpr attribute="CommentOrange" context="CommentOrangeContext" String="#{3}\ "/>
+                <Detect2Chars attribute="CommentBlue" char="#" char1="#" context="CommentBlueContext"/> <!-- Order matters: Attempt to match ## before # -->
+                <DetectChar attribute="Comment" char="#" context="hashCommentContext"/>
 
                 <Detect2Chars attribute="CommentBloodRed" char="/" char1="/" context="double-cpp-comment"/>
 
@@ -22,6 +24,8 @@
                 <RegExpr attribute="BlockTitleCyan" context="BlockTitleCyanContext" String="^\[c\ "/>
                 <RegExpr attribute="BlockTitleGreen" context="BlockTitleGreenContext" String="^\[g\ "/>
                 <RegExpr attribute="BlockTitlePurple" context="BlockTitlePurpleContext" String="^\[p\ "/>
+
+                <RegExpr attribute="codeDollar" context="codeDollarContext" String="^\$\ "/>
 
                 <!-- 3. Multiple line comments: -->
                 <RegExpr attribute="CodeSegment"     String="&#96;"              insensitive="true" context="#pop!codeBlock"       beginRegion="codeSegmentBegin"/> <!-- `code` -->
@@ -39,9 +43,9 @@
 
                 <RegExpr attribute="HTTP Header"    context="#stay" String="\b(?:https?|ftp)\://[^&quot;&gt;\s`\)]*[^\s!&quot;'`\(\)\*,\.:;&lt;&gt;\?~\]\}\\](?=[[:punct:]]*(?:[\s\)]|$))" />
                 <RegExpr attribute="ColourNumb"    context="#stay" String="[0-9]+(\.[0-9]+)?" /> <!-- 111.222 or 777 -->
-                <RegExpr attribute="ColourHigh" context="#stay" String="\[h\]|\[high\]|\[H\]|\[HIGH\]" />
-                <RegExpr attribute="ColourMedium" context="#stay" String="\[m\]|\[medium\]|\[M\]|\[MEDIUM\]|\[med\]|\[MED\]" />
-                <RegExpr attribute="ColourLow" context="#stay" String="\[l\]|\[low\]|\[L\]|\[LOW\]" />
+                <RegExpr attribute="ColourHigh" context="#stay" String="\[h\]|\[high\]|\[High\]|\[H\]|\[HIGH\]" />
+                <RegExpr attribute="ColourMedium" context="#stay" String="\[m\]|\[medium\]|\[Medium\]|\[M\]|\[MEDIUM\]|\[med\]|\[Med\]|\[MED\]" />
+                <RegExpr attribute="ColourLow" context="#stay" String="\[l\]|\[low\]|\[Low\]|\[L\]|\[LOW\]" />
 
             </context>
 
@@ -60,7 +64,7 @@
             </context>
 
             <!-- Comment lines -->
-            <context name="Hash comment" attribute="Comment" lineEndContext="#pop">
+            <context name="hashCommentContext" attribute="Comment" lineEndContext="#pop">
                 <DetectSpaces />
                 <DetectIdentifier/>
             </context>
@@ -105,7 +109,17 @@
                 <DetectIdentifier/>
             </context>
 
-            <context name="blue-comment" attribute="CommentBlue" lineEndContext="#pop">
+            <context name="codeDollarContext" attribute="CodeSegment" lineEndContext="#pop">
+                <DetectSpaces />
+                <DetectIdentifier/>
+            </context>
+
+            <context name="CommentBlueContext" attribute="CommentBlue" lineEndContext="#pop">
+                <DetectSpaces />
+                <DetectIdentifier/>
+            </context>
+
+            <context name="CommentOrangeContext" attribute="CommentOrange" lineEndContext="#pop">
                 <DetectSpaces />
                 <DetectIdentifier/>
             </context>
@@ -145,6 +159,7 @@
             <itemData name="Strong Text" color='#000000' bold="true"/>
             <itemData name="Comment" color='#008f00' backgroundColor='#edfff6'/>
             <itemData name="CommentBlue" color='#1603ff' backgroundColor='#e6f3ff'/>
+            <itemData name="CommentOrange" color='#ff8000' backgroundColor='#ffeedc'/>
             <itemData name="CommentBloodRed" color='#de0303' backgroundColor='#fff2f2'/>
             <itemData name="HTTP Header" color='#0080ff' underline="1" bold="0" italic="0" />
             <itemData name="ColourChar" color='#ff00ff'/>

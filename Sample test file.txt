@@ -9,8 +9,10 @@ Usage:
 /y yellow
 /d dark
 /w white
-// red
-#  green
+### orange line
+## Sample title
+# Sample title
+// Sample title
 
 2. Area highlight:
 <r r>
@@ -18,19 +20,19 @@ Usage:
 etc..
 
 3. Symbol highlight:
-* = $
+---
+===
+***
 
 4. Code:
+
 ```
 import pythonlib
 ```
 
+`This is code too`
 
-## Sample title
-# Sample title
-// Sample title
----
-===
+$ this is code as well
 
 
 5. use different symbols for colours: (DONE)
@@ -96,20 +98,18 @@ https://this-is-another-website (ends with a space)
 <* this should be bold *>
 <_ this should be underlined _>
 <i this should be italics i>
-
+__this__
+**this**
+_this_
+*this*
+~~this~~
 
 [r Titles (red) this is a title
-/hr same
 [o orange this is a title
-/ho same
 [b blue this is a title
-/hb same
 [g green this is a title
-/hg same
 [c cyan this is a title
-/hc same
 [p purple this is a title
-/hp same
 
 ### Tasks:
 [high] This is a high task [HIGH]
