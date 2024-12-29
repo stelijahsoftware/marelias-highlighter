@@ -10,20 +10,22 @@
                 <DetectSpaces attribute="Normal Text"/>
 
                 <!-- 1. One line comments, until end of line: -->
+				<RegExpr attribute="RuleDisallow" context="RuleDisallowContext" String="^✗\s"/>
+				<RegExpr attribute="RuleAllow" context="RuleAllowContext" String="^✓\s"/>
 
-                <RegExpr attribute="CommentOrange" context="CommentOrangeContext" String="#{3}\ "/>
+                <RegExpr attribute="CommentOrange" context="CommentOrangeContext" String="#{3}\s"/>
                 <Detect2Chars attribute="CommentBlue" char="#" char1="#" context="CommentBlueContext"/> <!-- Order matters: Attempt to match ## before # -->
                 <DetectChar attribute="Comment" char="#" context="hashCommentContext"/>
 
                 <Detect2Chars attribute="CommentBloodRed" char="/" char1="/" context="double-cpp-comment"/>
 
-                <RegExpr attribute="TaskDone" context="TaskDoneContext" String="^\[x\]\ |^\[X\]\ |^x\ -|^X\ -"/>
-                <RegExpr attribute="BlockTitleRed" context="BlockTitleRedContext" String="^\[r\ "/>
-                <RegExpr attribute="BlockTitleBlue" context="BlockTitleBlueContext" String="^\[b\ "/>
-                <RegExpr attribute="BlockTitleOrange" context="BlockTitleOrangeContext" String="^\[o\ "/>
-                <RegExpr attribute="BlockTitleCyan" context="BlockTitleCyanContext" String="^\[c\ "/>
-                <RegExpr attribute="BlockTitleGreen" context="BlockTitleGreenContext" String="^\[g\ "/>
-                <RegExpr attribute="BlockTitlePurple" context="BlockTitlePurpleContext" String="^\[p\ "/>
+                <RegExpr attribute="TaskDone" context="TaskDoneContext" String="^\[x\]\s|^\[X\]\s|^x\s-|^X\s-"/>
+                <RegExpr attribute="BlockTitleRed" context="BlockTitleRedContext" String="^\[r\s"/>
+                <RegExpr attribute="BlockTitleBlue" context="BlockTitleBlueContext" String="^\[b\s"/>
+                <RegExpr attribute="BlockTitleOrange" context="BlockTitleOrangeContext" String="^\[o\s"/>
+                <RegExpr attribute="BlockTitleCyan" context="BlockTitleCyanContext" String="^\[c\s"/>
+                <RegExpr attribute="BlockTitleGreen" context="BlockTitleGreenContext" String="^\[g\s"/>
+                <RegExpr attribute="BlockTitlePurple" context="BlockTitlePurpleContext" String="^\[p\s"/>
 
                 <RegExpr attribute="codeDollar" context="codeDollarContext" String="^\$\ "/>
 
@@ -124,6 +126,16 @@
                 <DetectIdentifier/>
             </context>
 
+            <context name="RuleDisallowContext" attribute="ColDisallow" lineEndContext="#pop">
+                <DetectSpaces />
+                <DetectIdentifier/>
+            </context>
+
+            <context name="RuleAllowContext" attribute="ColAllow" lineEndContext="#pop">
+                <DetectSpaces />
+                <DetectIdentifier/>
+            </context>
+
         </contexts>
 
         <itemDatas>
@@ -161,6 +173,8 @@
             <itemData name="CommentBlue" color='#1603ff' backgroundColor='#e6f3ff'/>
             <itemData name="CommentOrange" color='#ff8000' backgroundColor='#ffeedc'/>
             <itemData name="CommentBloodRed" color='#de0303' backgroundColor='#fff2f2'/>
+            <itemData name="ColDisallow" color='#eeeeee' backgroundColor='#ff0004'/>
+            <itemData name="ColAllow" color='#eeeeee' backgroundColor='#46c800'/>
             <itemData name="HTTP Header" color='#0080ff' underline="1" bold="0" italic="0" />
             <itemData name="ColourChar" color='#ff00ff'/>
             <itemData name="ColourNumb" color='#ff8000'/>
