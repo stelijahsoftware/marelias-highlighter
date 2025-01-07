@@ -1,3 +1,146 @@
+Usage:
+======
+1. Line highlight:
+/r red
+/g green
+/b blue
+/p purple
+/o orange
+/y yellow
+/d dark
+/w white
+### orange line
+## Sample title
+# Sample title
+// Sample title
+
+✗  website.to.block.com
+✓  website.to.allow.com
+
+2. Area highlight:
+<r r>
+<g g>
+etc..
+
+3. Symbol highlight:
+---
+===
+***
+
+4. Numbers:
+123456789.0...
+1.1
+...
+/\\\-=*$1234567890?&%
+
+5. Tasks:
+- Task 1
+- Task 2
+x - Finished task A
+X - Finished task B
+[x] This task is done...
+[X] also done
+
+4. Code:
+
+```
+import pythonlib
+```
+
+`This is code too`
+
+$ this is code as well
+
+
+5. use different symbols for colours: (DONE)
+
+< r r>
+
+< g g>
+
+etc..
+
+/r red
+
+/g green
+
+/b blue
+
+/p purple
+
+/o orange
+
+/y yellow
+
+/d dark
+
+/w white
+
+http://this-is-a-website (ends with a space or with line end)
+https://this-is-another-website (ends with a space)
+
+/r  Line comments
+//  this is also red
+#   this is green
+/g  this is also green
+/o  orange
+/lo light orange
+/b  blue
+/lb light blue
+/c  cyan
+/p  purple
+/ w this is a white line
+
+
+<r  Block comments r>
+<#  this is red #>
+<lo this is a test lo>
+<o  this is a test o>
+<b  this is a test b>
+<lb this is a test lb>
+<c  this is a test c>
+<g  this is a test g>
+<lg this is a test lg>
+<.  this is a test .>
+<p  this is a test p>
+< w this is a test w>
+<d  this is a test d>
+
+
+<- this should be crossed over ->
+<* this should be bold *>
+<_ this should be underlined _>
+<i this should be italics i>
+__this__
+**this**
+_this_
+*this*
+~~this~~
+
+[r Titles (red) this is a title
+[o orange this is a title
+[b blue this is a title
+[g green this is a title
+[c cyan this is a title
+[p purple this is a title
+
+### Tasks:
+[high] This is a high task [HIGH]
+[medium] This is a medium task [MEDIUM]
+[low] this is a low task [LOW]
+
+[h]
+[m]
+[l]
+
+
+
+
+
+
+
+
+
 // Install: ssss
 fdab https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html fda fd f dsaf d
 https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html fda fd f dsaf d
@@ -32,8 +175,6 @@ this // at end # this // one is
 This is a **bold** NOT BOLD NOW segment fdsa **abc** * ********* ******* **** *** fda fd afd a** fdsa f** dfsa **
 
 [x]This task is done...
-[x] This task is done...
-[X] also done
 x - This one also done
 X - THis is done
 abc[x] This task is done...
