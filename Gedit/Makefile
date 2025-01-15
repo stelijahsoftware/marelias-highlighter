@@ -11,12 +11,12 @@ copy_files:
 	mkdir -p ~/.local/share/libgedit-gtksourceview-300/styles/; \
 	fi
 
-	cp elyahw.lang ~/.local/share/libgedit-gtksourceview-300/language-specs/
-	cp elyahw_colours_dark.xml ~/.local/share/libgedit-gtksourceview-300/styles/
-	cp elyahw_colours.xml ~/.local/share/libgedit-gtksourceview-300/styles/
+	cp ./grammar/elyahw.lang ~/.local/share/libgedit-gtksourceview-300/language-specs/
+	#cp ./grammar/sh.lang    ~/.local/share/libgedit-gtksourceview-300/language-specs/sh.lang
+	#cp ./grammar/def.lang   ~/.local/share/libgedit-gtksourceview-300/language-specs/def.lang
 
-	#cp sh.lang ~/.local/share/libgedit-gtksourceview-300/language-specs/sh.lang
-	#cp def.lang ~/.local/share/libgedit-gtksourceview-300/language-specs/def.lang
+	cp ./colors/elyahw_colours_dark.xml ~/.local/share/libgedit-gtksourceview-300/styles/
+	cp ./colors/elyahw_colours.xml      ~/.local/share/libgedit-gtksourceview-300/styles/
 
 	dconf load / < settings.dconf
 
