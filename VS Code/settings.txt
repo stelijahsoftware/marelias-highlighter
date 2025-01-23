@@ -30,7 +30,7 @@
 		"editor.foldBackground": "#000000",
 		"editorBracketMatch.border": "#ff0000",
 		"editorBracketMatch.background": "#ff0000",
-        "editor.wordHighlightBackground": "#ff0000c2", // Changes the colour of the clicked variable matches https://stackoverflow.com/questions/35926381/change-highlight-text-color-in-visual-studio-code
+        "editor.wordHighlightBackground": "#ff0000c2", // Changes the colour of the clicked variable matches https://stackoverflow.com/q/35926381
 		"editorBracketMatch.foreground": "#000000",
 		"minimap.background": "#f0f0f0",
 		"minimap.selectionHighlight": "#00ff00",
@@ -127,13 +127,13 @@
 	"editor.useTabStops": false,
 	"C_Cpp.default.customConfigurationVariables": {
 
-},
-"cmake.pinnedCommands": [
-    "workbench.action.tasks.configureTaskRunner",
-    "workbench.action.tasks.runTask"
-],
-"cmake.useCMakePresets": "always",
-"cmake.showConfigureWithDebuggerNotification": false,
+    },
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "cmake.useCMakePresets": "always",
+    "cmake.showConfigureWithDebuggerNotification": false,
 
     // Terminals internet access:
     "terminal.integrated.env.linux": {
