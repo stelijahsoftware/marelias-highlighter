@@ -44,7 +44,7 @@
                 <DetectChar attribute="ColourChar" char="-" context="#stay"/>
 
                 <RegExpr attribute="HTTP Header"    context="#stay" String="\b(?:https?|ftp)\://[^&quot;&gt;\s`\)]*[^\s!&quot;'`\(\)\*,\.:;&lt;&gt;\?~\]\}\\](?=[[:punct:]]*(?:[\s\)]|$))" />
-                <RegExpr attribute="ColourNumb"    context="#stay" String="[0-9]+(\.[0-9]+)?" /> <!-- 111.222 or 777 -->
+                <RegExpr attribute="ColourNumb"    context="#stay" String="[0-9]+(\.[0-9]+)?|[٠-٩]+(\.[٠-٩]+)?" /> <!-- 111.222 or 777 -->
                 <RegExpr attribute="ColourHigh" context="#stay" String="\[h\]|\[high\]|\[High\]|\[H\]|\[HIGH\]" />
                 <RegExpr attribute="ColourMedium" context="#stay" String="\[m\]|\[medium\]|\[Medium\]|\[M\]|\[MEDIUM\]|\[med\]|\[Med\]|\[MED\]" />
                 <RegExpr attribute="ColourLow" context="#stay" String="\[l\]|\[low\]|\[Low\]|\[L\]|\[LOW\]" />
