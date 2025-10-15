@@ -1,0 +1,1 @@
+https://invent.kde.org/frameworks/syntax-highlighting/-/tree/master/data
